@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>一个嘴</title>
+		<style type="text/css">
+			.test {
+				position: relative;
+				width: 0;
+				height: 0;
+				border: 100px solid violet;
+				border-right-color: transparent;
+				border-radius: 50%;
+			}
+			
+			.test::after {
+				content: " ";
+				display: block;
+				position: absolute;
+				top: -70px;
+				left: -20px;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test"></div>
+	</body>
+</html>
